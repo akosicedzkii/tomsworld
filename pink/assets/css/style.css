@@ -245,27 +245,27 @@ padding:0px;
     transition-duration: 0.8s;
 }
 
-#charities .work-wrapper {
+#services .work-wrapper {
     border: 2px solid #004ecb;
     padding: 2px;
     margin: 5px 5px 10px 5px;
 }
 
-#charities img {
+#services img {
     filter: gray; /* FOR IE6-9 */
     -webkit-filter: grayscale(1); /* FOR Google Chrome, Safari 6+ and  Opera 15+ */
     opacity: 0.8;
 }
 
-    #charities img:hover {
+    #services img:hover {
         filter: none; /* FOR IE6-9 */
         -webkit-filter: grayscale(0); /* FOR Google Chrome, Safari 6+ and  Opera 15+ */
         opacity: 1;
     }
 /* =============================================================
-  TESTIMONIAL SECTION STYLES
+  technology SECTION STYLES
  ============================================================ */
-#testimonial {
+#technology {
     background: url(../img/testimonial.jpg) no-repeat center center;
     padding: 0;
     -webkit-background-size: cover;
@@ -274,7 +274,7 @@ padding:0px;
     background-attachment: fixed;
 }
 
-    #testimonial .overlay {
+    #technology .overlay {
         background-color: rgba(0,0,0,0.7);
         padding-top: 90px;
         min-height: 300px;
@@ -283,9 +283,9 @@ padding:0px;
         padding-bottom: 100px;
     }
 /* =============================================================
-  TEAM SECTION STYLES
+  osi SECTION STYLES
  ============================================================ */
-#team {
+#osi {
     background-color: rgba(237, 237, 237, 1);
 }
 

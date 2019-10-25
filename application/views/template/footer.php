@@ -59,7 +59,7 @@
                                          {
                                          ?>
                                            <a href="<?php echo FACEBOOK_URL;?>">
-                                                <img src="http://unioil.com/assets_site/images/unioil-thumbnail-facebook.png" class="social-media-link" alt=""></a>
+                                                <img src="<?php echo base_url();?>/assets_site/images/unioil-thumbnail-facebook.png" class="social-media-link" alt=""></a>
                                           <?php
                                          }
                                          ?>
@@ -68,7 +68,7 @@
                                          {
                                          ?>
                                             <a href="<?php echo TWITTER_URL;?>">
-                                                <img src="http://unioil.com/assets_site/images/unioil-thumbnail-twitter.png" class="social-media-link" alt=""></a>
+                                                <img src="<?php echo base_url();?>/assets_site/images/unioil-thumbnail-twitter.png" class="social-media-link" alt=""></a>
                                         <?php
                                          }
                                          ?>   
@@ -77,7 +77,7 @@
                                          {
                                          ?>
                                             <a href="<?php echo INSTAGRAM_URL;?>">
-                                                <img src="http://unioil.com/assets_site/images/unioil-thumbnail-instagram.png" class="social-media-link" alt=""></a>
+                                                <img src="<?php echo base_url();?>/assets_site/images/unioil-thumbnail-instagram.png" class="social-media-link" alt=""></a>
                                         <?php
                                          }
                                          ?>  

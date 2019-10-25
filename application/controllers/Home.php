@@ -13,7 +13,7 @@ class Home extends CI_Controller {
 		$this->v_counter->insert_visitor();   
 		$data["module_name"] = strtolower($this->router->fetch_class());
 		$data["title"] = "HOME - Unioil";
-		$query = "SELECT t2.file_name as banner_image, t3.file_name as inner_banner_image FROM banners as t1 LEFT JOIN media as t2 on t2.id = t1.banner_image LEFT JOIN media as t3 on t3.id = t1.inner_banner_image WHERE t1.status = 1";
+		$query = "SELECT t2.file_name as banner_image, t3.file_name as inner_banner_image,t1.description,t1.title FROM banners as t1 LEFT JOIN media as t2 on t2.id = t1.banner_image LEFT JOIN media as t3 on t3.id = t1.inner_banner_image WHERE t1.status = 1";
 		$data["banners"] = $this->db->query($query)->result();
 		$query = "SELECT t2.file_name as banner_image,t1.link FROM mid_banners as t1 LEFT JOIN media as t2 on t2.id = t1.banner_image WHERE t1.status = 1";
 		$data["mid_banners"] = $this->db->query($query)->result();

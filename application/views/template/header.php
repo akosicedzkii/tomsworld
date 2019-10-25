@@ -42,12 +42,15 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="<?php echo base_url();?>">Home</a></li>
-                    <li <?php if($page == "about_us"){ echo "class='active'";}?>><a href="<?php echo base_url()."about_us"?>">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#technlogy">Technology</a></li>
+                    <li><a href="#osi">Why OSI?</a></li>
+                    <!--<li <?php if($page == "about_us"){ echo "class='active'";}?>><a href="<?php echo base_url()."about_us"?>">About</a></li>
                     <li ><a href="#clients">Events</a></li>
-                    <li><a href="<?php echo base_url();?>#charities">Charities</a></li>
+                    <li><a href="<?php echo base_url();?>#charities">Charities</a></li>-->
                     <!--<li <?php if($page == "faqs"){ echo "class='active'";}?>><a href="<?php echo base_url()."faqs"?>">FAQ</a></li>-->
-                    <li <?php if($page == "blogs"){ echo "class='active'";}?>><a href="<?php echo base_url()."blogs"?>">Blog</a></li>
-                    <li <?php if($page == "login"){ echo "class='active'";}?>><a href="<?php echo base_url()."portal/login"?>">Login/Register</a></li>
+                    <!--<li <?php if($page == "blogs"){ echo "class='active'";}?>><a href="<?php echo base_url()."blogs"?>">Blog</a></li>
+                    <li <?php if($page == "login"){ echo "class='active'";}?>><a href="<?php echo base_url()."portal/login"?>">Login/Register</a></li>-->
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>

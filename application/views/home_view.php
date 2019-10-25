@@ -24,8 +24,8 @@
                 <div class="item<?php if($increment==0){ echo ' active';}?>">
                     <img class="carousel-bg" src="<?php echo base_url()."uploads/banners/".$row->banner_image;?>">
                     <div class="carousel-caption">
-                        <h3>Los Angeles</h3>
-                        <p>LA is always so much fun!</p>
+                        <h3><?php echo $row->title;?></h3>
+                        <p><?php echo $row->description;?></p>
                     </div>
                     <?php if($row->inner_banner_image != null || $row->inner_banner_image != ""){?>
                         <!--<img id="doing-your-part-copy" class="carousel-content animate fade-in" src="<?php echo base_url()."uploads/banners/".$row->inner_banner_image;?>">-->
@@ -46,162 +46,12 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-    <!--
     <section id="services">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
-                    <h2><strong>OUR SERVICES</strong></h2>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
-
-                </div>
-            </div>
-            <div class="row text-center pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
-                <div class="col-md-3">
-                    <i class="ion-ios-cloud-outline"></i>
-                    <h4><strong>Service Name # 1 </strong></h4>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-                </div>
-                <div class="col-md-3">
-                    <i class="ion-card"></i>
-                    <h4><strong>Service Name # 2 </strong></h4>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-                </div>
-                <div class="col-md-3">
-                    <i class="ion-speedometer"></i>
-                    <h4><strong>Service Name # 3 </strong></h4>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-                </div>
-                <div class="col-md-3">
-                    <i class="ion-ios-settings"></i>
-                    <h4><strong>Service Name # 4 </strong></h4>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-                </div>
-            </div>
-            <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.6s">
-                <div class="col-md-3">
-                    <i class="ion-ios-chatboxes-outline"></i>
-                    <h4><strong>Service Name # 5 </strong></h4>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-                </div>
-                <div class="col-md-3">
-                    <i class="ion-ios-pulse-strong"></i>
-                    <h4><strong>Service Name # 6 </strong></h4>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-                </div>
-                <div class="col-md-3">
-                    <i class="ion-ios-browsers-outline"></i>
-                    <h4><strong>Service Name # 7 </strong></h4>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-                </div>
-                <div class="col-md-3">
-                    <i class="ion-ios-people-outline"></i>
-                    <h4><strong>Service Name # 8 </strong></h4>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-                </div>
-            </div>
-        </div>
-
-
-    </section> 
-    <div id="clients">
-        <div class="overlay">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-12" data-scroll-reveal="enter from the bottom after 0.2s">
-                        <div class="carousel slide clients-carousel" id="clients-slider">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/themeforest.png" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/facebook.png" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/google.png" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/graphic.png" alt="" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/themeforest.png" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/facebook.png" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/google.png" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/graphic.png" alt="" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/themeforest.png" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/facebook.png" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/google.png" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="thumbnail" href="#">
-                                                <img src="<?php echo base_url()."pink/assets/";?>img/graphic.png" alt="" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a data-slide="prev" href="#clients-slider" class="left carousel-control">‹</a>
-                            <a data-slide="next" href="#clients-slider" class="right carousel-control">›</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  -->
-    <section id="charities">
-        <div class="container">
-            <div class="row text-center">
                 <div class="col-md-8 col-md-offset-2 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
-                    <h2><strong>Charities</strong></h2>
-                    <p>Become a Gift2Share Charity</p>
-                    <p>The purpose of 'Gift2Share' is to help make party organizing easy and also help charities by way of donation. </p>
-
-                    <p>If you would like to become a Gift2Share chosen charity, then please leave us a message in our contact us form below.</p>
+                    <h2><strong>Services</strong></h2>
+                    <p></p>
 
                 </div>
             </div>
@@ -211,10 +61,10 @@
                 <?php foreach($charities as $charity){?>
                 <div class="col-md-4 col-sm-4 html">
                     <div class="work-wrapper">
-
+                       
                         <a class="fancybox-media" title="<h3><?php echo $charity->title;?></h3><br><p style='text-align: justify;'><?php echo $charity->description;?></p>" href="<?php echo base_url()."uploads/charities/".$charity->file_name;?>">
-
-                            <img src="<?php echo base_url()."uploads/charities/".$charity->file_name;?>" class="img-responsive " alt="" />
+                            <h3><?php echo $charity->title;?></h3>
+                            <!--<img src="<?php echo base_url()."uploads/charities/".$charity->file_name;?>" class="img-responsive " alt="" />-->
                         </a>
 
 
@@ -225,24 +75,27 @@
         </div>
     </section>
     <!-- WORK SECTION END  -->
-    <div id="testimonial" data-scroll-reveal="enter from the bottom after 0.2s">
+    <div id="technology" data-scroll-reveal="enter from the bottom after 0.2s">
         <div class="overlay">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
                         <i class="ion-ios-drag clr-set f-big"></i>
                         <br />
-                        <p>
-                            Consectetur adipiscing elit felis dolor felis dolor vitae.
-                     Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae felis dolor vitae
-                        </p>
+                        <h2>
+                        Technology
+                        </h2>
+                        <h3>
+                        Secure Data Exchange
+
+                        </h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- TESTIMONIAL SECTION END  -->
-    <section id="team">
+    <section id="osi">
         <div class="container">
 
             <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.2s">

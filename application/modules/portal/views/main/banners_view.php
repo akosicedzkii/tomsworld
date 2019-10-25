@@ -350,7 +350,7 @@
                     $("#inputBannerImageError").html(img_error);
                     return false;
                 }
-                if(width != "1920" || height != "979")
+                /*if(width != "1920" || height != "979")
                 {                  
                     img_error = "<span style='color:red;'>Invalid cover size use 1920x979</span>";   
                     btn.button("reset");
@@ -360,14 +360,14 @@
                 else
                 {
                     $("#inputBannerImageError").html("");  
-                }
+                }*/
 
                 if($('#inputInnerBannerImage').val() != "")
                 { 
                     var imgInner = document.getElementById('innerBannerImgPrev'); 
                     var widthInner = imgInner.naturalWidth;
                     var heightInner = imgInner.naturalHeight;
-                    if(widthInner != "991" || heightInner != "266")
+                    /*if(widthInner != "991" || heightInner != "266")
                     {                  
                         img_error = "<span style='color:red;'>Invalid cover size use 991x266</span>";                     
                         btn.button("reset");
@@ -377,7 +377,7 @@
                     else
                     {
                         $("#inputInnerBannerImageError").html("");  
-                    }
+                    }*/
                 }
                 $('#uploadBoxMain').html('<div class="progress"><div class="progress-bar progress-bar-aqua" id = "progressBarMain" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 0%"><span class="sr-only">20% Complete</span></div></div>');
                 $.ajax({
