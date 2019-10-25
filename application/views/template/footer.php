@@ -10,28 +10,33 @@
                         <div class="col-md-6">
                             <form role="form" id="contact-form" class="contact-form">
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="Name" autocomplete="off" id="Name" placeholder="Name">
+                                            <input type="text" class="form-control" name="Name" autocomplete="off" id="contact-name" placeholder="Name">
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" name="email" autocomplete="off" id="email" placeholder="E-mail">
+                                            <input type="email" class="form-control" name="email" autocomplete="off" id="contact-email" placeholder="E-mail">
+                                        </div>
+                                </div>
+                                <div class="col-md-4">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="mobile" autocomplete="off" id="contact-mobile" placeholder="Mobile Number">
                                         </div>
                                 </div>
                                 </div>
                                 <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="subject" class="form-control" name="subject" autocomplete="off" id="subject" placeholder="Subject">
+                                                <input type="subject" class="form-control" name="subject" autocomplete="off" id="contact-subject" placeholder="Subject">
                                             </div>
                                         </div>
                                     </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea class="form-control textarea" rows="3" name="Message" id="Message" placeholder="Message"></textarea>
+                                        <textarea class="form-control textarea" rows="3" name="Message" id="contact-message" placeholder="Message"></textarea>
                                     </div>
                                     </div>
                                 </div>
@@ -119,6 +124,37 @@
     <script src="<?php echo base_url()."pink/assets/";?>js/scrollReveal.js"></script>
     <!-- CUSTOM SCRIPTS   -->
     <script src="<?php echo base_url()."pink/assets/";?>js/custom.js"></script>
+    <script>
+        $('#contact-form').on('submit', function(e) {
+            
+                e.preventDefault();
+                var values_contact_us_email = { "emailer_name" : "OSI Contact Us - " + $("#contact-name").val() ,  "to": $("#contact-email").val() , "body" : "Name:" + $("#contact-name").val() + " <br> Contact Number: " + $("#contact-mobile").val() + " <br> Contact Email: " + $("#contact-email").val() + " <br> Message: "+ $("#contact-message").val() }
+
+                $.ajax({
+                        url: "./sendemail/send_contact_us",
+                        type: "post",
+                        data: values_contact_us_email ,
+                        success: function (response) {
+                        if(response == "Message sent")
+                        {
+                            alert("Message successfully sent");
+                            window.location = "";
+                        }else{
+                                alert(response);
+                                //window.location = "";
+                            }						   
+                                
+
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                        console.log(textStatus, errorThrown);
+                        }
+
+
+                    });
+            
+        });
+    </script>
 
 </body>
 </html>

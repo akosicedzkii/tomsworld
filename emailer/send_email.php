@@ -1,7 +1,8 @@
 <?php
-
+echo "Message sent";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
 
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
@@ -15,9 +16,9 @@ $mail->SMTPAuth = true; // authentication enabled
 $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 465; // or 587
-$mail->Username = "maileruniol@gmail.com";
-$mail->Password = "p@ssw0rd123";
-$mail->SetFrom("mailerunioil@gmail.com",$_POST["emailer_name"]);
+$mail->Username = "senderrednes123@gmail.com";
+$mail->Password = "Cedzkii123!";
+$mail->SetFrom("senderrednes123@gmail.com",$_POST["emailer_name"]);
 $mail->Subject = $_POST["subject"];
 //$body = "<html>"; 
 ////$body .= "<body style=\"font-family:Verdana, Verdana, Geneva, sans-serif; font-size:12px; color:#666666;\">"; 

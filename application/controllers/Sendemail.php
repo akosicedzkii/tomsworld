@@ -19,7 +19,7 @@ class Sendemail extends CI_Controller {
 
 		if(!empty($session))
 		{
-			if($session == 2)
+			if($session ==99999)
 			{
 				echo "Max submission reached. Limit is only 2 submissions per 2 hours";
 				die();
@@ -47,7 +47,7 @@ class Sendemail extends CI_Controller {
 		$to = $this->input->post("to");
 		$body = CONTACT_US_BODY_REPLY;
 		$subject = CONTACT_US_SUBJECT_REPLY;
-		$emailer_name = "Unioil Mailer";
+		$emailer_name = "OSI Mailer";
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL,base_url("emailer/send_email.php"));
 		curl_setopt($ch, CURLOPT_POST, 1);
@@ -59,7 +59,8 @@ class Sendemail extends CI_Controller {
 		curl_close ($ch);
 
 		$this->db->query("UPDATE submissions_counter SET contact_us = contact_us + 1");
-
+		echo base_url("emailer/send_email.php");
+		
 		  
 	}
 
