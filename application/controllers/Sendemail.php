@@ -59,7 +59,6 @@ class Sendemail extends CI_Controller {
 		curl_close ($ch);
 
 		$this->db->query("UPDATE submissions_counter SET contact_us = contact_us + 1");
-		echo base_url("emailer/send_email.php");
 		
 		  
 	}
@@ -104,7 +103,7 @@ class Sendemail extends CI_Controller {
 			$to = $this->input->post("to");
 			$body = FRANCHISE_BODY_REPLY;
 			$subject = FRANCHISE_SUBJECT_REPLY;
-			$emailer_name = "Unioil Mailer";
+			$emailer_name = "Mailer";
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL,base_url("emailer/send_email.php"));
 			curl_setopt($ch, CURLOPT_POST, 1);
@@ -166,7 +165,7 @@ class Sendemail extends CI_Controller {
 			}else{
 				$attachment = "&attachment=";
 			}
-			$emailer_name = "Unioil Mailer";
+			$emailer_name = "Mailer";
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL,base_url("emailer/send_email.php"));
 			curl_setopt($ch, CURLOPT_POST, 1);
