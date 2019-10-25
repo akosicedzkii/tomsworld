@@ -40,11 +40,11 @@ section {
 }
 
 .set-bk-clr {
-    background-color: #004ecb;
+    background-color: #81d4fa;
 }
 
 .clr-set {
-    color: #004ecb;
+    color: #81d4fa;
 }
 
 .f-big {
@@ -93,7 +93,7 @@ padding:0px;
     }
 
 .navbar-default {
-    background-color: #004ecb;
+    background-color: #81d4fa;
     border-color: transparent;
 }
 /* ADDED PADDING IN NAVBAR */
@@ -144,7 +144,7 @@ padding:0px;
         font-weight: 900;
         padding-top: 180px;
         padding-bottom: 35px;
-        color: #004ecb;
+        color: #81d4fa;
     }
 
 
@@ -165,7 +165,7 @@ padding:0px;
     #services i {
         font-size: 80px;
         padding: 30px;
-        color: #004ecb;
+        color: #81d4fa;
     }
 
     #services h4 {
@@ -200,14 +200,14 @@ padding:0px;
 }
 
     .clients-carousel .thumbnail {
-        border: 1px solid #004ecb;
+        border: 1px solid #81d4fa;
     }
 
     .clients-carousel .carousel-control.left {
         height: 30px;
         width: 25px;
         margin-top: 45px;
-        background: #004ecb;
+        background: #81d4fa;
         left: -15px;
     }
 
@@ -215,7 +215,7 @@ padding:0px;
         height: 30px;
         width: 25px;
         margin-top: 45px;
-        background: #004ecb;
+        background: #81d4fa;
         right: -15px;
     }
 
@@ -234,8 +234,8 @@ padding:0px;
 
 /* FOR CHANGING COLOR OF ACTIVE CATEGORY */
 .caegories a.active {
-    background-color: #004ecb;
-    border: 2px solid #004ecb;
+    background-color: #81d4fa;
+    border: 2px solid #81d4fa;
 }
 
 /* FOR TRANSITION BEAUTIFULLY */
@@ -246,7 +246,7 @@ padding:0px;
 }
 
 #services .work-wrapper {
-    border: 2px solid #004ecb;
+    border: 2px solid #81d4fa;
     padding: 2px;
     margin: 5px 5px 10px 5px;
 }
@@ -293,7 +293,7 @@ padding:0px;
     margin-right: 40px;
     max-height: 150px;
     margin-bottom: 20px;
-    border: 2px solid #004ecb;
+    border: 2px solid #81d4fa;
 }
 
     .media img:hover {

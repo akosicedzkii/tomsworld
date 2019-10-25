@@ -1,5 +1,5 @@
 
-  <h2>Carousel Example</h2>
+  <h2></h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     
@@ -82,13 +82,7 @@
                     <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
                         <i class="ion-ios-drag clr-set f-big"></i>
                         <br />
-                        <h2>
-                        Technology
-                        </h2>
-                        <h3>
-                        Secure Data Exchange
-
-                        </h3>
+                       <?php echo $dynamic_settings->about_us;?>
                     </div>
                 </div>
             </div>
@@ -99,67 +93,12 @@
         <div class="container">
 
             <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.2s">
-                <div class="col-md-6 col-md-offset-3 pad-bottom">
-                    <h2><strong>AWESOME TEAM</strong></h2>
-                    Consectetur adipiscing elit felis dolor felis dolor vitae.Eelit felis dolor vitae
-
+                <div class="col-md-12  pad-bottom">
+                <?php echo $dynamic_settings->faqs;?>
                 </div>
             </div>
-            <div class="row pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+           
 
-                <div class="col-md-6 col-sm-6">
-                    <div class="media">
-                        <a class="media-left" href="#">
-                            <img src="<?php echo base_url()."pink/assets/";?>img/1.jpg" alt="" class="img-circle" />
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Technical Director</h3>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-           3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="media">
-                        <a class="media-left" href="#">
-                            <img src="<?php echo base_url()."pink/assets/";?>img/2.jpg" alt="" class="img-circle" />
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Marketing Director</h3>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-           3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row" data-scroll-reveal="enter from the bottom after 0.6s">
-
-                <div class="col-md-6 col-sm-6">
-                    <div class="media">
-                        <a class="media-left" href="#">
-                            <img src="<?php echo base_url()."pink/assets/";?>img/3.jpg" alt="" class="img-circle" />
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Clients Manager</h3>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-           3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="media">
-                        <a class="media-left" href="#">
-                            <img src="<?php echo base_url()."pink/assets/";?>img/4.jpg" alt="" class="img-circle" />
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Support Director</h3>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
-           3 wolf moon officia aute, non cupidatat skateboard dolor brunch. 
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </section>

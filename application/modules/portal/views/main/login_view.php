@@ -38,13 +38,8 @@
 </head>
 <body class="hold-transition login-page">
 <div class="row">
-  <div class="col-md-7">
-      <div class="div">
-        <b><h2>FAQs</h2></b>
-        <span><?php echo $faqs->faqs;?></span>
-    </div>
-  </div>
-  <div class="col-md-5">
+  
+  <div class="col-md-12">
   
   <div class="login-box">
   <div class="login-logo">

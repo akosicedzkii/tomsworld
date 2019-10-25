@@ -106,7 +106,7 @@
     </section>
     <!-- CONTACT SECTION END -->
     <footer>
-        &copy 2018 <?php echo SITE_NAME;?>   <a href="<?php echo base_url();?>" target="_blank"><!--by <?php echo SITE_NAME;?>--></a>
+        &copy 2019 <?php echo SITE_NAME;?>   <a href="<?php echo base_url();?>" target="_blank"><!--by <?php echo SITE_NAME;?>--></a>
     </footer>
     <!--FOOTER SECTION END  -->
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->

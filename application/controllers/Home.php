@@ -18,11 +18,12 @@ class Home extends CI_Controller {
 		$query = "SELECT t2.file_name as banner_image,t1.link FROM mid_banners as t1 LEFT JOIN media as t2 on t2.id = t1.banner_image WHERE t1.status = 1";
 		$data["mid_banners"] = $this->db->query($query)->result();
 		$data["page"] = "home";
-		
+		$data["dynamic_settings"] = $this->db->get("dynamic_settings")->row();
         $this->db->limit(3, 0);
         $this->db->where("status","1");
         $this->db->where("content_type","blogs");
         $data["charities"] = $this->db->query("SELECT t1.id,t1.description,t1.author,t1.title,t1.date_created,t2.file_name,t1.content FROM charities AS t1 LEFT JOIN media AS t2 on t2.id = t1.cover_image WHERE t1.content_type='charities' AND t1.status = 1 ORDER BY t1.date_created DESC limit 0,10")->result();
+		
 		$this->load->view('template/header.php',$data);
 		$this->load->view('home_view');
 		$this->load->view('template/footer.php',$data);

@@ -41,9 +41,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="<?php echo base_url();?>">Home</a></li>
+                    <li><a href="#myCarousel">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#technlogy">Technology</a></li>
+                    <li><a href="#technology">Technology</a></li>
                     <li><a href="#osi">Why OSI?</a></li>
                     <!--<li <?php if($page == "about_us"){ echo "class='active'";}?>><a href="<?php echo base_url()."about_us"?>">About</a></li>
                     <li ><a href="#clients">Events</a></li>
