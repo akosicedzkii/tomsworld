@@ -35,7 +35,7 @@ class Sendemail extends CI_Controller {
 		$subject = "Contact Us Response";
 		$emailer_name = $this->input->post("emailer_name");
 		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL,base_url("emailer/send_email.php"));
+		curl_setopt($ch, CURLOPT_URL,"http://localhost/emailer/send_email.php");
 		curl_setopt($ch, CURLOPT_POST, 1);
 		curl_setopt($ch, CURLOPT_POSTFIELDS,"emailer_name=$emailer_name&to=$to&body=$body&subject=$subject&attachment="."&others=");
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -49,7 +49,7 @@ class Sendemail extends CI_Controller {
 		$subject = CONTACT_US_SUBJECT_REPLY;
 		$emailer_name = "OSI Mailer";
 		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL,base_url("emailer/send_email.php"));
+		curl_setopt($ch, CURLOPT_URL,"http://localhost/emailer/send_email.php");
 		curl_setopt($ch, CURLOPT_POST, 1);
 		curl_setopt($ch, CURLOPT_POSTFIELDS,"emailer_name=$emailer_name&to=$to&body=$body&subject=$subject&attachment="."&others=");
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
