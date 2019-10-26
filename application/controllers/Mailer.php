@@ -9,7 +9,11 @@ class Mailer extends CI_Controller {
 		$this->settings_model->get_settings(); 
 		 
 	}
-	
+	public function index()
+	{
+		echo "test";
+
+	}
 	public function send_contact_us()
 	{
 		$session = $this->session->userdata('submission');
