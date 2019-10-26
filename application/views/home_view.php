@@ -62,8 +62,8 @@
                 <div class="col-md-4 col-sm-4 html">
                     <div class="work-wrapper">
                        
-                        <a class="fancybox-media" title="<h3><?php echo $charity->title;?></h3><br><p style='text-align: justify;'><?php echo $charity->description;?></p>" href="<?php echo base_url()."uploads/charities/".$charity->file_name;?>">
-                            <h3><?php echo $charity->title;?></h3>
+                       <a class="fancybox-media" title="<h3><?php echo $charity->title;?></h3><br><p style='text-align: justify;'><?php echo $charity->description;?></p>" href="#">
+                       <center><h3><?php echo $charity->title;?></h3></center>
                             <!--<img src="<?php echo base_url()."uploads/charities/".$charity->file_name;?>" class="img-responsive " alt="" />-->
                         </a>
 
