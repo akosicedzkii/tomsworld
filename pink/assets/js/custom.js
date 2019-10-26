@@ -29,13 +29,13 @@ $(document).ready(function () {
         });
 
     //COLLAPSE HEADER ON SCRLL
-        $(window).scroll(function () {
+        /*$(window).scroll(function () {
             if ($(".navbar").offset().top > 40) {
                 $(".navbar-fixed-top").addClass("navbar-pad-original");
             } else {
                 $(".navbar-fixed-top").removeClass("navbar-pad-original");
             }
-        });
+        });*/
 
     //FANCY BOX PLUGIN SCRIPT FOR POPUP IMAGE
         $('.fancybox-media').fancybox({
@@ -79,5 +79,6 @@ $(document).ready(function () {
     //CLIENTS SLIDER
         $("#clients-slider").carousel({
             interval: 2000 //TIME IN MILLI SECONDS
-        });
+        });
+
 });
