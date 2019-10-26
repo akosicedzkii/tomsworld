@@ -7,10 +7,7 @@ class Mailer extends CI_Controller {
     {
         parent::__construct();
 		$this->settings_model->get_settings(); 
-		$upload_path = './emailer/attachment/'; 
-		if (!is_dir($upload_path)) {
-			mkdir($upload_path, 0777, TRUE);
-		}  
+		 
 	}
 	
 	public function send_contact_us()
