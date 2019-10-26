@@ -27,7 +27,7 @@ $config['modules_locations'] = array(
 |
 */
 $ip_server = $_SERVER['SERVER_ADDR']; 
-if($ip_server != "122.55.178.194"){
+if($ip_server == "localhost" || $ip_server == "::1"){
 
 $config['base_url'] = 'http://localhost/one/';
 }else{
