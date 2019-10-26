@@ -26,7 +26,13 @@ $config['modules_locations'] = array(
 | a PHP script and you can easily do that on your own.
 |
 */
+$ip_server = $_SERVER['SERVER_ADDR']; 
+if($ip_server != "122.55.178.194"){
+
 $config['base_url'] = 'http://localhost/one/';
+}else{
+    $config['base_url'] = 'http://122.55.178.194/';
+}
 
 /*
 |--------------------------------------------------------------------------

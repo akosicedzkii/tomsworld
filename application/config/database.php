@@ -70,6 +70,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
 */
+$password = "";
+$ip_server = $_SERVER['SERVER_ADDR']; 
+if($ip_server == "122.55.178.194"){
+
+	$password = "cedtom@123";
+}
 $active_group = 'default';
 $query_builder = TRUE;
 
@@ -77,7 +83,7 @@ $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
-	'password' => '',
+	'password' => $password,
 	'database' => 'one',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
