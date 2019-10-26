@@ -68,7 +68,7 @@ padding:0px;
 
 }
     .navbar-brand img {
-        height:50px;
+        height:60px;
     }
 .navbar-default .navbar-toggle {
     border-color: #FFF;
@@ -338,6 +338,9 @@ footer {
         /* define mobile specific styles come here */
         #myCarousel{
             margin-top:80px;
+        }
+        .pad-bottom {
+            padding-bottom: 20px;
         }
       }
 html, body { overflow-x: hidden; }

@@ -56,11 +56,11 @@
                 </div>
             </div>
 
-            <div class="row text-center" id="portfolio-div">
+            <div class="row text-center">
 
                 <?php foreach($charities as $charity){?>
                 <div class="col-md-4 col-sm-4 html">
-                    <div class="work-wrapper text-center">
+                    <center>
                        
                        <!--<a class="fancybox-media" title="<h3><?php echo $charity->title;?></h3><br><p style='text-align: justify;'><?php echo $charity->description;?></p>" href="#">-->
                       <h3><?php echo $charity->title;?></h3>
@@ -68,7 +68,7 @@
                         <!--</a>-->
 
 
-                    </div>
+                </center>
                 </div>
                 <?php }?>
             </div>
