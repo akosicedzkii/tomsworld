@@ -12,7 +12,8 @@ class Sendemail extends CI_Controller {
 			mkdir($upload_path, 0777, TRUE);
 		}  
 	}
-	public function index()
+	
+	public function send_contact_us()
 	{
 		$session = $this->session->userdata('submission');
 
@@ -58,10 +59,6 @@ class Sendemail extends CI_Controller {
 		curl_close ($ch);
 
 		$this->db->query("UPDATE submissions_counter SET contact_us = contact_us + 1");
-	}
-	public function send_contact_us()
-	{
-		
 		
 		  
 	}
