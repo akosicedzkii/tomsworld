@@ -134,7 +134,7 @@
                 var values_contact_us_email = { "emailer_name" : "OSI Contact Us - " + $("#contact-name").val() ,  "to": $("#contact-email").val() , "body" : "Name:" + $("#contact-name").val() + " <br> Contact Number: " + $("#contact-mobile").val() + " <br> Contact Email: " + $("#contact-email").val() + " <br> Message: "+ $("#contact-message").val() }
 
                 $.ajax({
-                        url: "<?php echo base_url("sendemail/send_contact_us");?>",
+                        url: "<?php echo base_url("portal/sendemail/send_contact_us");?>",
                         type: "post",
                         data: values_contact_us_email ,
                         success: function (response) {
