@@ -72,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $password = "";
 $ip_server = $_SERVER['SERVER_ADDR']; 
-if($ip_server != "localhost" || $ip_server != "::1"){
+if($ip_server != "localhost" and $ip_server != "::1"){
 
 	$password = "cedtom@123";
 }

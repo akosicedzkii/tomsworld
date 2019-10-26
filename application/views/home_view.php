@@ -60,12 +60,12 @@
 
                 <?php foreach($charities as $charity){?>
                 <div class="col-md-4 col-sm-4 html">
-                    <div class="work-wrapper">
+                    <div class="work-wrapper text-center">
                        
-                       <a class="fancybox-media" title="<h3><?php echo $charity->title;?></h3><br><p style='text-align: justify;'><?php echo $charity->description;?></p>" href="#">
-                       <center><h3><?php echo $charity->title;?></h3></center>
+                       <!--<a class="fancybox-media" title="<h3><?php echo $charity->title;?></h3><br><p style='text-align: justify;'><?php echo $charity->description;?></p>" href="#">-->
+                      <h3><?php echo $charity->title;?></h3>
                             <!--<img src="<?php echo base_url()."uploads/charities/".$charity->file_name;?>" class="img-responsive " alt="" />-->
-                        </a>
+                        <!--</a>-->
 
 
                     </div>
