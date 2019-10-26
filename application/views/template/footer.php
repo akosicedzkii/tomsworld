@@ -12,37 +12,37 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="Name" autocomplete="off" id="contact-name" placeholder="Name">
+                                            <input type="text" required class="form-control" name="Name" autocomplete="off" id="contact-name" placeholder="Name">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" name="email" autocomplete="off" id="contact-email" placeholder="E-mail">
+                                            <input type="email" required class="form-control" name="email" autocomplete="off" id="contact-email" placeholder="E-mail">
                                         </div>
                                 </div>
                                 <div class="col-md-4">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="mobile" autocomplete="off" id="contact-mobile" placeholder="Mobile Number">
+                                            <input type="text" required class="form-control" name="mobile" autocomplete="off" id="contact-mobile" placeholder="Mobile Number">
                                         </div>
                                 </div>
                                 </div>
                                 <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="subject" class="form-control" name="subject" autocomplete="off" id="contact-subject" placeholder="Subject">
+                                                <input type="subject" required class="form-control" name="subject" autocomplete="off" id="contact-subject" placeholder="Subject">
                                             </div>
                                         </div>
                                     </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea class="form-control textarea" rows="3" name="Message" id="contact-message" placeholder="Message"></textarea>
+                                        <textarea class="form-control textarea" required rows="3" name="Message" id="contact-message" placeholder="Message"></textarea>
                                     </div>
                                     </div>
                                 </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <button type="submit" class="btn btn-success pull-right">Send a message</button>
+                                            <button type="submit" id="send" class="btn btn-success pull-right">Send a message</button>
                                         </div>
                                     </div>
                             </form>
@@ -129,7 +129,7 @@
             $('.navbar-collapse').collapse('hide');
         });
         $('#contact-form').on('submit', function(e) {
-            
+            $("#send").button("loading");
                 e.preventDefault();
                 var values_contact_us_email = { "emailer_name" : "OSI Contact Us - " + $("#contact-name").val() ,  "to": $("#contact-email").val() , "body" : "Name:" + $("#contact-name").val() + " <br> Contact Number: " + $("#contact-mobile").val() + " <br> Contact Email: " + $("#contact-email").val() + " <br> Message: "+ $("#contact-message").val() }
 
@@ -147,10 +147,11 @@
                                 //window.location = "";
                             }						   
                                 
-
+			$("#send").button("reset");
                         },
                         error: function(jqXHR, textStatus, errorThrown) {
-                        console.log(textStatus, errorThrown);
+				console.log(textStatus, errorThrown);
+				$("#send").button("reset");
                         }
 
 
