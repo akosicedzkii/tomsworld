@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#myCarousel">
                     <img src="<?php echo base_url()."uploads/site_logo/".SITE_LOGO;?>"  alt=""/>
                 </a>
             </div>
